@@ -12,9 +12,31 @@ body {
     background-attachment: fixed;
 }
 
-
 section {
     margin: 6rem 0;
     color: aliceblue;
     text-align: center;
+}
+
+#bio {
+    text-align: left;
+}
+
+hr {
+    background-color: greenyellow;
+    width: 250px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+#float-right {
+    float: right;
+    margin-left: 20px;
+    
 }
