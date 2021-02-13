@@ -23,28 +23,85 @@
 
     <!-- Scripts | Jquery, Popper, bootstrap, script -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
+        defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
+        defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="./logic/script.js"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+        defer></script>
+    <script src="./logic/script.js" defer></script>
 
 
     <title>Portfolio</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- START: Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <!-- Home page link (About); left side -->
+            <a class="navbar-brand" href="index.html">Brandon Haley</a>
+
+            <!-- Mobile collapse button (burger); right side -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Main navbar continer with links and dropdown menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <!--  -->
+                <ul class="navbar-nav">
+                    <!-- Contact Link; goes to Contact page -->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                    <!-- Portfolio link; goes to portfolio page -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <!-- About link; goes to about page -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#bio">About</a>
+                    </li>
+
+                    <!-- Dropdown box which contains more links/elements -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            More content
+                        </a>
+
+                        <!-- Moved dropdown box alignment to fix overflowing into the body right side; dark color -->
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <!-- Content to come soon! Stay tuned -->
+                            <li><a class="dropdown-item" id="soundcloud" href="https://soundcloud.com/supr_nova"
+                                    target="_blank">SoundCloud</a></li>
+                            <li><a class="dropdown-item" href="#">Coming soon...</a></li>
+                            <li><a class="dropdown-item" href="#">Coming soon...</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav> -->
+    <!-- END: Nav Bar -->
+
+
     <main>
-        <div class="container" id="">
+        <!-- bio -->
+        <div class="container" id="bio">
             <!-- About Me -->
             <section>
                 <header>
                     <h1>About Me</h1>
-                    <p>Some info about me...</p>
                     <hr>
                 </header>
                 <div class="col" id="bio">
@@ -113,56 +170,93 @@
             </section>
         </div>
 
-
-        <div class="container" id="">
         <!-- Projects -->
-        <section>
-            <header>
-                <h1>Some of my latest works...</h1>
-                <hr>
-            </header>
-            <div class="row g-2">
-                <div class="col col-md-4">
-                    <h4>City 411</h4>
-                    <a href="https://github.com/dassoumik/city411" target="_blank">
-                        <img src="https://github.com/dassoumik/city411/raw/main/images/md/city411.gif"
-                            alt="HTML tutorial" style="width:300px;height:250px;">
-                    </a>
+        <div class="container" id="projects">
+            <section>
+                <header>
+                    <h1>Some of my latest works...</h1>
+                    <hr>
+                </header>
+                <div class="row g-2">
+                    <div class="col col-md-4">
+                        <h4>City 411</h4>
+                        <a href="https://github.com/dassoumik/city411" target="_blank">
+                            <img src="https://github.com/dassoumik/city411/raw/main/images/md/city411.gif"
+                                alt="HTML tutorial" style="width:300px;height:250px;">
+                        </a>
 
+                    </div>
+
+                    <div class="col col-md-4 g-xs-3">
+                        <h4>Dynamicly Random Quiz</h4>
+                        <a href="https://github.com/Kyle7286/code-quiz" target="_blank">
+                            <img src="https://github.com/Kyle7286/code-quiz/raw/main/Assets/md/codeQuiz.gif"
+                                alt="HTML tutorial" style="width:300px;height:250px;">
+                        </a>
+
+                    </div>
+
+                    <div class="col col-md-4 g-xs-3">
+                        <h4>Weather Dashboard</h4>
+                        <a href="https://github.com/Kyle7286/weather-dashboard" target="_blank">
+                            <img src="https://github.com/Kyle7286/weather-dashboard/raw/main/assets/md/weatherDashboard.gif"
+                                alt="HTML tutorial" style="width:300px;height:250px;">
+                        </a>
+
+                    </div>
                 </div>
+            </section>
+        </div>
 
-                <div class="col col-md-4 g-xs-3">
-                    <h4>Dynamicly Random Quiz</h4>
-                    <a href="https://github.com/Kyle7286/code-quiz" target="_blank">
-                        <img src="https://github.com/Kyle7286/code-quiz/raw/main/Assets/md/codeQuiz.gif"
-                            alt="HTML tutorial" style="width:300px;height:250px;">
-                    </a>
+        <!-- Contact -->
+        <div class="container" id="contact">
+            <section>
+                <header>
+                    <h1>Contact</h1>
+                    <!-- START: Main  Content -->
+                    <main>
+                        <div class="container" id="contact-form">
+                            <!-- ROW 1.0 -->
+                            <hr>
 
-                </div>
+                            <!-- Row 2.0 -->
+                            <div class="row" id="row2">
+                                <!-- COLUMN 2.1 -->
+                                <div class="col-md-12">
+                                    <div class="mb-3 ms-3 me-5">
 
-                <div class="col col-md-4 g-xs-3">
-                    <h4>Weather Dashboard</h4>
-                    <a href="https://github.com/Kyle7286/weather-dashboard" target="_blank">
-                        <img src="https://github.com/Kyle7286/weather-dashboard/raw/main/assets/md/weatherDashboard.gif"
-                            alt="HTML tutorial" style="width:300px;height:250px;">
-                    </a>
+                                        <!-- NAME INPUT -->
+                                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                        <input type="text" class="form-control mb-3" id="exampleFormControlInput1"
+                                            placeholder="Name">
 
-                </div>
-            </div>
-        </section>
-    </div>
+                                        <!-- EMAIL INPUT -->
+                                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                        <input type="email" class="form-control mb-3" id="exampleFormControlInput2"
+                                            placeholder="Email">
 
-        <!-- Other -->
-        <div class="container" id=""></div>
-        <section>
-            <header>
-                <h1>Contact</h1>
-                <p>Contact details...</p>
-            </header>
-        </section>
-    </div>
+                                        <!-- MESSAGE INPUT -->
+                                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            placeholder="Message" rows="3"></textarea>
+                                    </div>
 
-        
+                                    <!-- Submit Button; currently not functional; plan to add logic later -->
+                                    <button type="submit" class="btn btn-dark">Submit</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                    <!-- END: Main Content -->
+
+
+
+                </header>
+            </section>
+        </div>
+
+
     </main>
 
 
