@@ -31,6 +31,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
         defer></script>
+    <script src="https://kit.fontawesome.com/2f4afaae31.js" crossorigin="anonymous" defer></script>
+
     <script src="./logic/script.js" defer></script>
 
 
@@ -56,37 +58,23 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <!--  -->
                 <ul class="navbar-nav">
-                    <!-- Contact Link; goes to Contact page -->
+                    <!-- About link; goes to about page -->
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                        <a class="nav-link" href="#bio">About</a>
                     </li>
                     <!-- Portfolio link; goes to portfolio page -->
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
-                    <!-- About link; goes to about page -->
+                    <!-- Contact Link; goes to Contact page -->
                     <li class="nav-item">
-                        <a class="nav-link active" href="#bio">About</a>
+                        <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./assets/docs/BrandonHaley_Resume.pdf" download>| Resume</a>
                     </li>
 
-                    <!-- Dropdown box which contains more links/elements -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            More content
-                        </a>
 
-                        <!-- Moved dropdown box alignment to fix overflowing into the body right side; dark color -->
-                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
-                            aria-labelledby="navbarDropdownMenuLink">
-                            <!-- Content to come soon! Stay tuned -->
-                            <li><a class="dropdown-item" id="soundcloud" href="https://soundcloud.com/supr_nova"
-                                    target="_blank">SoundCloud</a></li>
-                            <li><a class="dropdown-item" href="#">Coming soon...</a></li>
-                            <li><a class="dropdown-item" href="#">Coming soon...</a></li>
-                        </ul>
-
-                    </li>
                 </ul>
             </div>
 
@@ -178,83 +166,110 @@
                     <hr>
                 </header>
                 <div class="row g-2">
+
                     <div class="col col-md-4">
                         <h4>City 411</h4>
-                        <a href="https://dassoumik.github.io/city411/" target="_blank">
+                        <a class="img-project" href="https://dassoumik.github.io/city411/" target="_blank">
                             <img src="https://github.com/dassoumik/city411/raw/main/images/md/city411.gif"
                                 alt="city 411 project" style="width:300px;height:250px;">
                         </a>
-
+                        <a class="github" href="https://github.com/dassoumik/city411" target="_blank">
+                            <img class="img-github" src="./images/GitHub-Mark.png" alt="randomized code quiz"
+                                style="width:40px;height:40px;">
+                        </a>
                     </div>
 
                     <div class="col col-md-4 g-xs-3">
                         <h4>Dynamicly Random Quiz</h4>
-                        <a href="https://kyle7286.github.io/code-quiz/" target="_blank">
+                        <a class="img-project" href="https://kyle7286.github.io/code-quiz/" target="_blank">
                             <img src="https://github.com/Kyle7286/code-quiz/raw/main/Assets/md/codeQuiz.gif"
                                 alt="randomized code quiz" style="width:300px;height:250px;">
                         </a>
-
+                        <a class="github" href="https://github.com/Kyle7286/code-quiz" target="_blank">
+                            <img class="img-github" src="./images/GitHub-Mark.png" alt="randomized code quiz"
+                                style="width:40px;height:40px;">
+                        </a>
                     </div>
 
                     <div class="col col-md-4 g-xs-3">
                         <h4>Weather Dashboard</h4>
-                        <a href="https://kyle7286.github.io/weather-dashboard/" target="_blank">
+                        <a class="img-project" href="https://kyle7286.github.io/weather-dashboard/" target="_blank">
                             <img src="https://github.com/Kyle7286/weather-dashboard/raw/main/assets/md/weatherDashboard.gif"
                                 alt="weather dashboard" style="width:300px;height:250px;">
                         </a>
-
+                        <a class="github" href="https://github.com/Kyle7286/weather-dashboard" target="_blank">
+                            <img class="img-github" src="./images/GitHub-Mark.png" alt="randomized code quiz"
+                                style="width:40px;height:40px;">
+                        </a>
                     </div>
+
                 </div>
             </section>
         </div>
 
-        <!-- Contact -->
+        <!-- Contact Form-->
         <div class="container" id="contact">
             <section>
                 <header>
                     <h1>Contact</h1>
-                    <!-- START: Main  Content -->
-                    <main>
-                        <div class="container" id="contact-form">
-                            <!-- ROW 1.0 -->
-                            <hr>
-
-                            <!-- Row 2.0 -->
-                            <div class="row" id="row2">
-                                <!-- COLUMN 2.1 -->
-                                <div class="col-md-12">
-                                    <div class="mb-3 ms-3 me-5">
-
-                                        <!-- NAME INPUT -->
-                                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                        <input type="text" class="form-control mb-3" id="exampleFormControlInput1"
-                                            placeholder="Name">
-
-                                        <!-- EMAIL INPUT -->
-                                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                        <input type="email" class="form-control mb-3" id="exampleFormControlInput2"
-                                            placeholder="Email">
-
-                                        <!-- MESSAGE INPUT -->
-                                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            placeholder="Message" rows="3"></textarea>
-                                    </div>
-
-                                    <!-- Submit Button; currently not functional; plan to add logic later -->
-                                    <button type="submit" class="btn btn-dark">Submit</button>
-
-                                </div>
-                            </div>
-                        </div>
-                    </main>
-                    <!-- END: Main Content -->
-
-
-
+                    <hr>
                 </header>
+
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div class="mb-3 ms-3 me-5" id="contact-form">
+
+                            <!-- NAME INPUT -->
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="text" class="form-control mb-3" id="exampleFormControlInput1"
+                                placeholder="Name">
+
+                            <!-- EMAIL INPUT -->
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control mb-3" id="exampleFormControlInput2"
+                                placeholder="Email">
+
+                            <!-- MESSAGE INPUT -->
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                                rows="3"></textarea>
+                        </div>
+
+                        <!-- Submit Button; currently not functional; plan to add logic later -->
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </div>
+                    <div class="col-4"></div>
+
+
+                </div>
+
+                <!-- Contact Info -->
+                <div class="row">
+                    <div class="col-6" id="contact-info">
+                        <div id="links">
+                            <a href="https://github.com/Kyle7286/" target="_blank"><i
+                                    class="icon fab fa-github-square"></i></a>
+                       
+                            
+                            <a href = "mailto:Kyle7286@gmail.com?subject=Portfolio Contact"
+                                target="_blank"><i class="icon far fa-envelope"></i></a>
+                      
+                            
+                            <a href = "https://www.linkedin.com/in/bhaleyln/"
+                                target="_blank"><i class="icon fab fa-linkedin"></i></a>
+                             
+                        </div>
+
+                        <span id="email">Kyle7286@gmail.com</span> | <span id="phone">770.503.6140</span>
+                    </div>
+                </div>
             </section>
+
         </div>
+
+
+
 
 
     </main>

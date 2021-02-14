@@ -22,6 +22,10 @@ section {
     text-align: left;
 }
 
+header {
+    margin-bottom: 4rem;
+}
+
 hr {
     background-color: greenyellow;
     width: 250px; 
@@ -43,5 +47,35 @@ hr {
 
 #contact-form {
     text-align: left;
-    width: 50%;
+}
+
+.github {
+    display: block;
+    margin-top: .5rem;
+}
+
+.img-project:hover {
+    border: solid greenyellow;
+}
+
+.img-github {
+    border-radius: 50%;
+}
+
+
+#contact-info {
+    /* border: solid red; */
+    margin: auto;
+    margin-top: 2rem;
+}
+
+
+.icon {
+    font-size: 50px;
+    /* display: block; */
+    text-align: left;
+}
+
+a {
+    color: white;
 }
